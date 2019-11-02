@@ -1,0 +1,395 @@
+@font-face {
+    font-family: "Main";
+    src: url(./Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url(./Roboto-Medium.ttf);
+}
+
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Main";
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Bold";
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+#Background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#Background div {
+    width: 544px;
+    height: 100%;
+    background: url(../images/bluebackground.png);
+    background-size: cover;
+    background-position: 0px -4px;
+    float: right;
+}
+
+#Background .blueMenu {
+    height: 90px !important;
+}
+
+#Content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
+.topBar {
+    width: 100%;
+    height: 90px;
+    box-shadow: -5px -4px 5px #00000045, 0 1px 5px #00000038;
+    -webkit-box-shadow: -5px -4px 5px #00000045, 0 1px 5px #00000038;
+}
+
+.logo {
+    height: 70px;
+    margin-top: 10px;
+    float: left;
+}
+
+.wrapper {
+    width: 1260px;
+}
+.container {
+    width: 1260px;
+}
+.w3-card:hover{
+    cursor: pointer;
+    box-shadow: 0 20px 30px 0 rgba(2,2,2,6.2)
+}
+
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        width: 1220px;
+    }
+    .container {
+        width: 1220px;
+    }
+}
+
+#menu {
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+
+#menu li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+#menu li:hover {
+    color: #12C97A;
+}
+
+#menu .current {
+    color: #12C97A !important;
+}
+
+.slider {
+    float: left;
+    margin-top: 60px;
+}
+
+.slider p,
+.slider h1,
+.slider h3 {
+    margin: 0px 0px 5px 0px;
+    text-align: left;
+}
+
+.slider p,
+.slider h3 {
+    color: #5C737F;
+}
+
+.slider p {
+    line-height: 27px;
+}
+
+.slider hr {
+    width: 100px;
+    height: 2px;
+    background: #12C97A;
+    border: 0px;
+    float: left;
+}
+
+button {
+    margin-top: 47px;
+    width: 158px;
+    height: 40px;
+    border: 0px;
+    border-radius: 100px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    background: #12C97A;
+}
+
+.researchBtn {
+    background: #5C737F;
+    margin-left: 25px;
+}
+
+.countCircles {
+    width: 20%;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+}
+
+.countCircles div {
+    width: 5px;
+    height: 5px;
+    border: 0.5px solid #5C737F;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+#circle1 {
+    background: #5C737F;
+}
+
+#contactBlock {
+    width: 100%;
+    height: 420px;
+    margin-top: 60px;
+    -webkit-box-shadow: -5px -4px 5px #00000045, 0 1px 5px #00000038;
+    box-shadow: -5px -4px 5px #00000045, 0 1px 5px #00000038;
+    background: white;
+    float: left;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+#contactBlock div {
+    width: 40%;
+    height: inherit;
+    float: right;
+    background: #063C56;
+}
+
+#contactBlock div h3 {
+    font-size: 20px;
+    color: #12C97A;
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+#contactBlock div p {
+    color: white;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+#contactBlock form {
+    float: left;
+    text-align: left;
+    margin-left: 25px;
+}
+
+#contactBlock form input {
+    height: 40px;
+    width: 318px;
+    border: 0px;
+    border-bottom: 1px solid #063C56;
+    margin-bottom: 26px;
+    outline: none;
+    padding-left: 5px;
+    color: #063C56;
+}
+
+#contactBlock form textarea {
+    width: 318px;
+    color: #063C56;
+    padding-left: 5px;
+    border: 0px;
+    border-bottom: 1px solid #063C56;
+    outline: none;
+    height: 100px;
+}
+
+#contactBlock form button {
+    background: #063C56;
+}
+
+#contactBlock form p {
+    color: #063C56;
+}
+
+#mobileMenu {
+    display: none;
+}
+
+#Research {
+    text-align: left;
+    margin-left: 15px;
+}
+
+#Research h3 {
+    color: #5C737F;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#Research h1 {
+    margin-top: 0px;
+}
+
+#Research p {
+    margin-bottom: 0px;
+    margin-top: 40px;
+    color: #5C737F;
+    width: 1000px;
+    line-height: 31px;
+    text-align: justify;
+}
+
+#Research hr {
+    width: 100px;
+    height: 2px;
+    background: #12C97A;
+    border: 0px;
+    float: left;
+}
+
+#Research ul {
+    line-height: 27px;
+    width: 1000px;
+    text-align: justify;
+    color: #5C737F;
+}
+
+#Research ul li {
+    margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+    .logo {
+        margin-top: 0px;
+        height: 62px;
+        background: white;
+        padding: 14px;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        background: url(../images/mobileBackground.png);
+    }
+    #Research p, #Research ul {
+        width: 85%;
+    }
+    #Background div {
+        background: url(redcap.png);
+        background-size: cover;
+    }
+    #mobileMenu {
+        display: inline-block;
+    }
+    #menu {
+        display: none;
+    }
+    .slider {
+        margin-left: 30px;
+    }
+    .researchBtn {
+        background: #063C56;
+        color: white;
+    }
+    .slider p,
+    .slider h3 {
+        color: white;
+    }
+    .slider p {
+        font-size: 13px;
+    }
+    .slider h1 {
+        color: #12C97A;
+        font-size: 20px;
+    }
+    #mobileMenu {
+        display: inline-block;
+        float: right;
+        margin-top: 28px;
+        margin-right: 30px;
+    }
+    .countCircles {
+        margin-top: 72px;
+    }
+    .slider button {
+        float: left;
+    }
+    button {
+        width: 122px;
+        height: 40px;
+        float: none;
+    }
+    #contactBlock {
+        width: 100%;
+        float: left;
+    }
+    #contactBlock form {
+        float: unset;
+    }
+    #contactBlock div {
+        width: 100%;
+        height: 254px;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    #menu li {
+        display: block;
+    }
+    #menu {
+        padding: 0px 22px 18px 0px;
+        margin: 0px;
+        margin-right: 40px;
+        margin-top: 18px;
+        background: #235369;
+        border-radius: 5px;
+        -webkit-box-shadow: -5px -4px 5px #00000045, 0 1px 5px #00000038;
+        box-shadow: -5px -4px 5px #00000045, 0 1px 5px #00000038;
+        position: unset;
+    }
+    #dropdown {
+        width: 159px;
+        height: 90px;
+        float: right;
+        position: relative;
+        z-index: 1;
+    }
+    #dropdown:hover #menu {
+        display: block;
+    }
+}
+/*# sourceMappingURL=index.css.map */
