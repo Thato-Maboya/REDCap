@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>Advanced Non-Faculty Payments</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="index.css"/>
+<script type="text/javascript" src="index.js"></script>
+<body>
+<div class="w3-container w3-red">
+    <div class="w3-container">
+        <h1 class="w3-center">Advanced Non-Workshop Payments</h1>
+        <h2 class="w3-large">Two payment methods</h2>
+    </div>
+
+    <div class="w3-row ">
+        <div class="w3-container">
+            <div class="w3-card w3-container w3-white" style="min-height:440px">
+                <div class="w3-container"><h2 class="w3-center">R5625</h2></div>
+                <div class="slider">
+                    <h1 id="boldTitle" style="color: tomato">REDCap</h1>
+                    <hr><br/><br/>
+                    <ul>
+                        <li><b>Time:</b> 08:30 - 15:00</li>
+                        <li><b>Cost:</b>
+                            <ul>
+                                <li>R5625 Wits Faculty of Health Sciences staff or student</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-container">
+                    <form class="w3-center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="UMWW77JJ9BQ2L">
+                        <input type="hidden" name="lc" value="ZA">
+                        <input type="hidden" name="item_name" value="AdvWorkshopNonFaculty">
+                        <input type="hidden" name="item_number" value="AdvWorkshopNonFaculty">
+                        <input type="hidden" name="amount" value="375">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="button_subtype" value="services">
+                        <input type="hidden" name="no_note" value="1">
+                        <input type="hidden" name="no_shipping" value="1">
+                        <input type="hidden" name="rm" value="1">
+                        <input type="hidden" name="return" value="https://thato-maboya.github.io/REDCap/thank-you.php">
+                        <input type="hidden" name="cancel_return" value="https://thato-maboya.github.io/REDCap/Adv.html">
+                        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHosted">
+                        <input type="hidden" name="notify_url" value="https://thato-maboya.github.io/REDCap/lister.php">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <br/><br/><br/><br/>
+        </div>
+</body>
+</html>
