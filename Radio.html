@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>REDCap Payments Selection</title>
+    <style>
+        @media screen and (max-width: 1200px) {
+            label.radio {
+                font-size: larger;
+            }
+        }
+    </style>
 </head>
 <body>
-<label for="chkYes">
+<label class="radio" for="chkYes">
     <a href="payment1.html"><input type="radio" id="chkYes" name="chkPassPort" onclick="ShowHideDiv()" />Introductory Hand-on Workshop</a>
 </label><br/>
-<label for="chkNo">
+<label class="radio" for="chkNo">
     <a href="payment2.html"><input type="radio" id="chkNo" name="chkPassPort" onclick="ShowHideDiv()" />Advanced Workshop</a>
 </label>
 </body>
